@@ -70,7 +70,7 @@ function Get-StromerAccessToken {
 
     csrfmiddlewaretoken	ug7jnRiQiY7beb85Kp66hSXDf1CDnF5LPwu3lRt6iP3iV8EMyGJeOESd1uRkDnlJ
     next	/mobile/v4/o/authorize/?response_type=code&scope=bikestatus&client_id=4P3VE9rBYdueKQioWb7nv7RJDU8EQsn2wiQaNqhG
-    username	joel.ammann@outlook.com
+    username	tom@example.com
     password	xxxxxxxxxxxx
 
     #Login response

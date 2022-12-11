@@ -11,6 +11,11 @@ param (
 
 . ./StromerFunctions.ps1
 
+if(-not (Test-Path $Global:DATA_DIR))
+{
+    New-Item -Path $Global:DATA_DIR -ItemType Directory | Out-Null
+}
+
 do {
 
     $StartTime = Get-Date
