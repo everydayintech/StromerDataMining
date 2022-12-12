@@ -9,7 +9,10 @@ param (
     $requestInterval = 60 * 5
 )
 
-. ./StromerFunctions.ps1
+$ErrorActionPreference = 'Stop'
+
+$coreFunctions = Join-Path $PSScriptRoot 'StromerFunctions.ps1'
+. $coreFunctions
 
 if(-not (Test-Path $Global:DATA_DIR))
 {
@@ -19,6 +22,8 @@ if(-not (Test-Path $Global:DATA_DIR))
 do {
 
     $StartTime = Get-Date
+
+    Write-Host "Start time: $($StartTime)"
 
     Write-Host "Requesting Bike List..."
     Get-StromerBikelist
